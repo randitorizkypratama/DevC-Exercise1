@@ -1,52 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>BIODATA</title>
-<style>
-.title{
-font-size: "20px"
-}
-.header{background-color:gold;
-}
-.main{
-background-color:blue;
-color: white;
-}
-.footer{
-	background-color:#f0f0f0f0;
-	position: bottom;
-}
-.submit{
-	margin-left: 100px
-	height:50px;
-	width: 50px;
-}
-input{
-	width: 50%;
-}
 
-</style>
+<head>
+	<title>BIODATA</title>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body><center>
-<div class="header">
-<h1 > BIODATA</h1></center>
-</div>
-<div class="main">
-	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQ1lNttRWtDFzDm2Vq9B6HuQNbfskSAJg3c50lALrd0OmpR34" width="100px" height="100px" />
-	<form>
-<h1 class="title">Nama:</h1>
-<span>R.Andito Rizky Pratama</span>
-<br/>
-<h1 class="title" >Umur:</h1>
-<input type="number" value="23 "/>
-<br/>
-<h1 class="title" >Alamat:</h1>
-<input type="text" name="jalan" value="Jl A yani no 31" readonly/>
-<br/>
-<h1 class="">Cita-cita:</h1>
-<input type="text" name="Cita-cita" value="Menjadi Programmer yang serba bisa" disabled/>
-<br/>
-<input type="submit" value="save" class="submit"/>
-</form>
-</div>
-<div class="footer">Copyright by &copy;Andito</div>
+
+<body>
+
+	<form style="width: 1000px" class="posisi" ;>
+		<center>
+			<span class="title">Biodata</span>
+		</center>
+		<div class="row">
+			<div class="column left">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiQ1lNttRWtDFzDm2Vq9B6HuQNbfskSAJg3c50lALrd0OmpR34"
+					width="250px" height="350px" />
+			</div>
+			<div class="column right">
+				<label>Nama:</label>
+				<span>R.Andito Rizky Pratama</span>
+				<br /><br />
+				<label>Umur:</label>
+				<span>23 Tahun</span>
+				<br /><br />
+				<label>Alamat:</label>
+				<span>Jalan A. Yani No 31</span>
+				<br /><br />
+				<label>Cita-cita:</label>
+				<span>Menjadi Programmer yang serba bisa</span>
+				<br /><br />
+				<label>Saran:</label>
+				<br />
+				<textarea rows="7" cols="65" name="saran "></textarea>
+			</div>
+		</div>
+		<br />
+		<center>
+			<input type="submit" value="Send" class="buttons" />
+		</center>
+
+	</form>
+</body>
